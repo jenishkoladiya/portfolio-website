@@ -11,20 +11,6 @@
     ></script>
   </head>
   <body>
-    <!-- <div id="header">
-      <div class="container">
-        <nav>
-          <div class="logo">Jenish's Portfolio</div>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div> -->
     <div id="header">
       <nav>
         <div class="left">Portfolio.</div>
@@ -32,7 +18,8 @@
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#skills">Skills</a></li> -->
+            <!-- <li><a href="#services">Services</a></li> -->
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
@@ -42,9 +29,22 @@
     <main>
       <section class="firstSection">
         <div class="leftSection">
-          Hi, My name is <span class="purple">Jenish</span>
+          <p>
+            Hello!, This is <span class="purple"><br />Jenish Koladiya</span>
+          </p>
           <div>and I am a passionate</div>
           <span id="element"></span>
+          <div class="social-icon">
+            <a href="https://github.com/jenishkoladiya"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jenish-koladiya-9b9573233/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/_jenish_koladiya_/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
           <div class="resume">
             <a href="resume.pdf" download class="btn btn2">Download Resume</a>
           </div>
@@ -63,7 +63,29 @@
           </div>
           <div class="col2">
             <h1 class="sub-title">About Me</h1>
-            <p>write about your self</p>
+            <h4>Full Stack Developer</h4>
+            <br />
+            <p>
+              I am a Student currently enrolled in B-Tech Computer Science in
+              Parul University.My fascination with computers and problem-solving
+              naturally drew me towards web development.Full-stack development
+              ignites my passion to bridge the gap between front-end creativity
+              and back-end logic.
+            </p>
+            <br />
+            <p>
+              With my solid foundation in Java, Python, and front-end
+              technologies like HTML, CSS, JavaScript, ReactJS, I'm eager to
+              bridge the gap and master the back-end as well. Full-stack
+              development aligns perfectly with my passion for coding and
+              problem-solving, allowing me to tackle every aspect of web
+              application creation.
+            </p>
+            <br />
+            <p>
+              Currently, I'm actively working on building projects that allow me
+              to solidify my full-stack knowledge.
+            </p>
             <div class="tab">
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
@@ -107,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div id="services">
+    <!-- <div id="services">
       <div class="container">
         <h1 class="sub-title">Services</h1>
         <div class="services-list">
@@ -137,7 +159,50 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <!-- <div id="skill">
+      <div class="container">
+        <div class="col">
+          <div class="tab">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Java</span></li>
+              <li><span>Python</span></li>
+              <li><span>HTML</span></li>
+              <li><span>CSS</span></li>
+              <li><span>Javascript</span></li>
+              <li><span>DSA</span></li>
+              <li><span>DBMS</span></li>
+              <li><span>MySQL</span></li>
+              <li><span>MERN Stack development</span></li>
+              <li><span>Web Development</span></li>
+              <li><span>App Development</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>Fresher</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>B.tech(compute Engineering)</span><br />Parul
+                University<br />2021-2025
+              </li>
+              <li><span>12th</span><br />Ram Krushna School<br />2021</li>
+              <li><span>10th</span><br />Ram Krushna School<br />2019</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">Projects</h1>
@@ -235,6 +300,7 @@
           "Java Developer",
         ],
         typeSpeed: 50,
+        loop: true,
       });
     </script>
     <script>
@@ -254,132 +320,3 @@
     </script>
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jenish - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(0, 0, 39);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(6, 6, 68);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        color: rgb(153, 153, 244);
-        font-size: 1.02rem;
-      }
-      .left {
-        font-size: 1.5rem;
-      }
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 120px 0;
-      }
-      .firstSection > div {
-        width: 30%;
-      }
-      .leftSection {
-        font-size: 2.5rem;
-      }
-      .rightSection img {
-        width: 80%;
-      }
-      .text-gray {
-        color: gray;
-      }
-      .purple {
-        color: blueviolet;
-      }
-      #element {
-        color: blueviolet;
-      }
-      main hr {
-        border: 0;
-        background: rgb(146, 144, 198);
-        height: 1.2px;
-        margin: 60px 85px;
-      }
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-      }
-      .secondSection h1 {
-        font-size: 1.9rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="left">Jenish's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hi, My name is <span class="purple">Jenish</span>
-          <div>and I am a passionate</div>
-          <span id="element"></span>
-        </div>
-        <div class="rightSection">
-          <img src="dev.png" alt="" />
-        </div>
-      </section>
-      <hr />
-      <section class="secondSection">
-        <span class="text=gray">What I have done so far</span>
-        <h2>Work Experience</h2>
-      </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Web Developer", "MERN Stack Developer", "Java Developer"],
-        typeSpeed: 50,
-      });
-    </script>
-  </body>
-</html> -->
