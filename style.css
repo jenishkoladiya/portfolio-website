@@ -12,12 +12,16 @@ body{
   color: white;
 }
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    background-color: rgb(6, 6, 68);
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  top: 0;
+  width: 100%;
+  background-color: rgb(6, 6, 68);
+  position: fixed;
+  z-index: 1000;
+}
 nav ul li{
     display: inline-block;
     justify-content: center;
@@ -86,9 +90,9 @@ nav ul li a::after {
   } */
   .rightSection {
     position: relative;
-    margin: 100px 0;
-    width: 70%;
-    height: 70%;
+    margin: 150px 0;
+    width: 30%;
+    height: 30%;
     border-radius: 90%;
     overflow: hidden;
     display: flex;
@@ -104,13 +108,23 @@ nav ul li a::after {
     border-radius: 50%;
     border: 5px solid rgb(26, 75, 99);
   }
-  @keyframes moveupDown {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+  #moving-photo {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 90%;
+    animation: move 5s infinite alternate;
+}
+@keyframes move {
+  0% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(0px, 30px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
 }
   .purple {
     color: blueviolet;
@@ -146,8 +160,15 @@ nav ul li a::after {
   .col2 p{
     font-size: 15px;
   }
-  #skill{
+
+/* ---------------skills and qualification-------------- */
+
+  #skills{
+    padding: 40px 0;
     margin: 0 80px;
+  }
+  .container{
+    margin-top: 50px;
   }
   .tab{
     display: flex;
@@ -180,11 +201,15 @@ nav ul li a::after {
     font-size: 15px;
   }
   .tab-contents ul li span{
-    color: rgb(1, 77, 255);
+    color: rgb(153, 153, 244);
     font-size: 18px;
   }
   .tab-contents{
     display: none;
+  }
+  .tab-contents li span:hover{
+    color: rgb(255, 0, 79);
+    transform: translateY(-50px);
   }
   .tab-contents.active-tab{
     display: block;
@@ -237,40 +262,68 @@ nav ul li a::after {
 /* ----------------portfolio------------ */
 
 #portfolio{
-  padding: 50px 0;
-  margin: 0 60px;
+  padding: 40px 0;
+  margin: -50px 80px;
 }
 .work-list{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 50px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.work1{
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+}
+.sub-title{
+  margin-bottom: 20px;
+}
+.work1 img{
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  transition: transform 0.5s;
+}
+.work2{
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+}
+.work2 img{
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  transition: transform 0.5s;
 }
 .work{
+  height: 100%;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
-.work img{
-  width: 40%;
+/* .work img{
+  width: 60%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
-}
+} */
 .layer{
-  width: 40%;
+  width: 100%;
   height: 0%;
   background: linear-gradient(rgba(0,0,0,0.5),rgb(255, 55, 118));
   border-radius: 10px;
   position: absolute;
-  left: 0;
   bottom: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 30px;
   text-align: center;
   font-size: 14px;
   transition: height 0.5s;
@@ -292,11 +345,13 @@ nav ul li a::after {
   border-radius: 50%;
   text-align: center;
 }
-.work:hover img, .work .layer{
+.work:hover img, .layer{
   transform: scale(1.1);
 }
 .work:hover .layer{
   height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .btn{
   display: block;
@@ -318,6 +373,13 @@ nav ul li a::after {
 
 #contact{
   margin: 0 80px;
+}
+.row1{
+  display: flex;
+  justify-content: space-around;  
+}
+.sub-title1{
+  margin-bottom: 20px;
 }
 .contact-left{
   flex-basis: 35%;
@@ -375,4 +437,23 @@ form .btn2{
   background-color: rgb(38, 38, 38);
   font-weight: 300;
   margin-top: 20px;
+}
+.up-arrow{
+  color: aquamarine;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 40px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  margin-left: 1450px;
+  border-radius: 50%;
+  text-align: center;
+  scroll-behavior: smooth;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+}
+.up-arrow:hover{
+  background-color: rgb(38, 42, 255);
 }

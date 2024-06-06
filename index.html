@@ -18,7 +18,7 @@
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <!-- <li><a href="#skills">Skills</a></li> -->
+            <li><a href="#skills">Skills</a></li>
             <!-- <li><a href="#services">Services</a></li> -->
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="rightSection">
+        <div class="rightSection" id="moving-photo">
           <img src="me.jpeg" />
         </div>
       </section>
@@ -86,45 +86,6 @@
               Currently, I'm actively working on building projects that allow me
               to solidify my full-stack knowledge.
             </p>
-            <div class="tab">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Java</span></li>
-                <li><span>Python</span></li>
-                <li><span>HTML</span></li>
-                <li><span>CSS</span></li>
-                <li><span>Javascript</span></li>
-                <li><span>DSA</span></li>
-                <li><span>DBMS</span></li>
-                <li><span>MySQL</span></li>
-                <li><span>MERN Stack development</span></li>
-                <li><span>Web Development</span></li>
-                <li><span>App Development</span></li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>Fresher</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>B.tech(compute Engineering)</span><br />Parul
-                  University<br />2021-2025
-                </li>
-                <li><span>12th</span><br />Ram Krushna School<br />2021</li>
-                <li><span>10th</span><br />Ram Krushna School<br />2019</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -160,17 +121,18 @@
         </div>
       </div>
     </div> -->
-    <!-- <div id="skill">
+    <div id="skills">
       <div class="container">
+        <h1>Skills and Qualification</h1>
         <div class="col">
           <div class="tab">
-            <p class="tab-links active-link" onclick="opentab('skills')">
+            <p class="tab-links active-link" onclick="opentab('skill_1')">
               Skills
             </p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-          <div class="tab-contents active-tab" id="skills">
+          <div class="tab-contents active-tab" id="skill_1">
             <ul>
               <li><span>Java</span></li>
               <li><span>Python</span></li>
@@ -187,7 +149,7 @@
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li>Fresher</li>
+              <li><span>Fresher</span></li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
@@ -202,37 +164,41 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">Projects</h1>
         <div class="work-list">
-          <div class="work">
-            <img src="img1.png" />
-            <div class="layer">
-              <h3>Poetfolio</h3>
-              <p>
-                Developed a responsive portfolio website using HTML, CSS, and
-                JavaScript, showcasing projects and skills with an intuitive and
-                visually appealing design.
-              </p>
-              <a
-                href="https://portfolio-website-jenishkoladiyas-projects.vercel.app/"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+          <div class="work1">
+            <div class="work">
+              <img src="img1.png" />
+              <div class="layer">
+                <h3>Poetfolio</h3>
+                <p>
+                  Developed a responsive portfolio website using HTML, CSS, and
+                  JavaScript, showcasing projects and skills with an intuitive
+                  and visually appealing design.
+                </p>
+                <a
+                  href="https://portfolio-website-jenishkoladiyas-projects.vercel.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
           </div>
-          <div class="work">
-            <img src="img2.png" />
-            <div class="layer">
-              <h3>Jotion-Note Making Application</h3>
-              <p>
-                Developed a CSS, JavaScript and TypeScript based note-making web
-                application with real-time synchronization
-              </p>
-              <a href="/"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+          <div class="work2">
+            <div class="work">
+              <img src="img2.png" />
+              <div class="layer">
+                <h3>Jotion-Note Making Application</h3>
+                <p>
+                  Developed a CSS, JavaScript and TypeScript based note-making
+                  web application with real-time synchronization
+                </p>
+                <a href="/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
           </div>
           <!-- <div class="work">
@@ -250,10 +216,10 @@
       </div>
     </div>
     <div id="contact">
-      <div class="container">
-        <div class="row">
+      <div class="container1">
+        <h1 class="sub-title1">Contact Me</h1>
+        <div class="row1">
           <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
             <p>
               <i class="fa-solid fa-envelope"></i>jenishkoladiya54@gmail.com
             </p>
@@ -289,6 +255,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="up-arrow">
+      <a href="/"><i class="fa-solid fa-angle-up"></i></a>
     </div>
     <div class="copyright">Copyright ©2024 Jenish. All rights reserved</div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
