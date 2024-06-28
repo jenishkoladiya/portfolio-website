@@ -3,31 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jenish - Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Jenish's Portfolio</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" />
     <script
       src="https://kit.fontawesome.com/b706de4491.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ukBt_PEmhJv_ihXGS");
+        })();
+    </script>
   </head>
   <body>
     <div id="header">
       <nav>
-        <div class="left">Portfolio.</div>
+        <div class="left">Jenish.</div>
         <div class="right">
           <ul>
-            <li><a href="#header">Home</a></li>
+            <li><a href="#Home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <!-- <li><a href="#services">Services</a></li> -->
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark"></i>
           </ul>
+          <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
     </div>
     <main>
-      <section class="firstSection">
+      <section class="firstSection" id="Home">
         <div class="leftSection">
           <p>
             Hello!, This is <span class="purple"><br />Jenish Koladiya</span>
@@ -51,7 +63,7 @@
         </div>
 
         <div class="rightSection" id="moving-photo">
-          <img src="me.jpeg" />
+          <img src="assets/images/me.jpeg" />
         </div>
       </section>
     </main>
@@ -59,10 +71,10 @@
       <div class="container">
         <div class="row">
           <div class="col1">
-            <img src="me.jpeg" />
+            <img src="assets/images/me.jpeg" />
           </div>
           <div class="col2">
-            <h1 class="sub-title">About Me</h1>
+            <h1 class="sub-title">About <span>Me</span></h1>
             <h4>Full Stack Developer</h4>
             <br />
             <p>
@@ -123,9 +135,9 @@
     </div> -->
     <div id="skills">
       <div class="container">
-        <h1>Skills and Qualification</h1>
+        <h1 class="sub-title">Skills and Qualification</h1>
         <div class="col">
-          <div class="tab">
+          <!-- <div class="tab">
             <p class="tab-links active-link" onclick="opentab('skill_1')">
               Skills
             </p>
@@ -134,25 +146,113 @@
           </div>
           <div class="tab-contents active-tab" id="skill_1">
             <ul>
-              <li><span>Java</span></li>
-              <li><span>Python</span></li>
-              <li><span>HTML</span></li>
-              <li><span>CSS</span></li>
-              <li><span>Javascript</span></li>
-              <li><span>DSA</span></li>
-              <li><span>DBMS</span></li>
-              <li><span>MySQL</span></li>
-              <li><span>MERN Stack development</span></li>
-              <li><span>Web Development</span></li>
-              <li><span>App Development</span></li>
+              <div class="main">
+                <div class="sub1">
+                  <li><i class="fa-brands fa-java"></i><span>Java</span></li>
+                  <li><i class="fa-brands fa-python"></i><span>Python</span></li>
+                  <li><i class="fa-brands"><iconify-icon icon="simple-icons:mongodb"></iconify-icon></i><span>MongoDB</span></li>
+                  <li><span>Express.js</span></li>
+                  <li><i class="fa-brands fa-node"></i><span>Node.js</span></li>    
+                </div>
+                <div class="sub2">
+                  <li><i class="fa-brands fa-react"></i><span>React.js</span></li>
+                  <li><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+                  <li><i class="fa-brands fa-css3"></i><span>CSS</span></li>
+                  <li><i class="fa-brands fa-js"></i><span>Javascript</span></li>
+                  <li><i class="fa-solid fa-database"></i><span>MySQL</span></li>   
+                </div>
+              </div>
             </ul>
           </div>
           <div class="tab-contents" id="experience">
             <ul>
               <li><span>Fresher</span></li>
             </ul>
+          </div> -->
+          <div class="SkillBox">
+            <div class="SKILLS_1">
+              <i class="fa-solid fa-code"></i>
+              <h3>Skills</h3>
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="SKILLS_2">
+              <div class="skill" style="--pos: 1">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+              </div>
+              <div class="skill" style="--pos: 2">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+              </div>
+              <div class="skill" style="--pos: 3">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+              </div>
+              <div class="skill" style="--pos: 7">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+              </div>
+              <div class="skill" style="--pos: 5">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+              </div>
+              <div class="skill" style="--pos: 8">
+                <i class="fa-brands fa-react"></i>
+                <h3>ReactJs</h3>
+              </div>
+              <div class="skill" style="--pos: 9">
+                <i class="fa-brands fa-node"></i>
+                <h3>NodeJs</h3>
+              </div>
+              <div class="skill" style="--pos: 10">
+                <i class="mongo"
+                  ><iconify-icon icon="simple-icons:express"></iconify-icon
+                ></i>
+                <h3>ExpressJS</h3>
+              </div>
+              <div class="skill" style="--pos: 11">
+                <i class="mongo"
+                  ><iconify-icon icon="simple-icons:mongodb"></iconify-icon
+                ></i>
+                <h3>MongoDB</h3>
+              </div>
+              <div class="skill" style="--pos: 13">
+                <i class="bx bxs-data"></i>
+                <h3>MySQL</h3>
+              </div>
+            </div>
           </div>
-          <div class="tab-contents" id="education">
+          <div class="Qualification">
+            <div class="QUAL_1">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Qualifications</h3>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="qualbox">
+              <div class="qual q1">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>B.tech(CSE)</h3>
+                <h4>Parul University</h4>
+                <h6>Vadodara, Gujarat</h6>
+                <h6>2021-Present</h6>
+              </div>
+              <div class="qual q2">
+                <i class="fa-solid fa-building-columns"></i>
+                <h3>10th</h3>
+                <h4>Ram Krushna School</h4>
+                <h6>Bhavnagar, Gujarat</h6>
+                <h6>2021</h6>
+              </div>
+              <div class="qual q3">
+                <i class="fa-solid fa-school"></i>
+                <h3>12th</h3>
+                <h4>Ram Krushna School</h4>
+                <h6>Bhavnagar, Gujarat</h6>
+                <h6>2019</h6>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="tab-contents" id="education">
             <ul>
               <li>
                 <span>B.tech(compute Engineering)</span><br />Parul
@@ -161,7 +261,7 @@
               <li><span>12th</span><br />Ram Krushna School<br />2021</li>
               <li><span>10th</span><br />Ram Krushna School<br />2019</li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -171,7 +271,7 @@
         <div class="work-list">
           <div class="work1">
             <div class="work">
-              <img src="img1.png" />
+              <img src="assets/images/portfolio.png" />
               <div class="layer">
                 <h3>Poetfolio</h3>
                 <p>
@@ -188,7 +288,7 @@
           </div>
           <div class="work2">
             <div class="work">
-              <img src="img2.png" />
+              <img src="assets/images/jotion.png" />
               <div class="layer">
                 <h3>Jotion-Note Making Application</h3>
                 <p>
@@ -217,7 +317,7 @@
     </div>
     <div id="contact">
       <div class="container1">
-        <h1 class="sub-title1">Contact Me</h1>
+        <h1 class="sub-title1">Contact <span>Me</span></h1>
         <div class="row1">
           <div class="contact-left">
             <p>
@@ -237,7 +337,7 @@
             </div>
           </div>
           <div class="contact-Right">
-            <form>
+            <!-- <form>
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
@@ -251,7 +351,16 @@
                 placeholder="Your Message"
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
+            </form> -->
+            <form action="http://localhost:3000/send" method="post">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
             </form>
+          
+          
+          
           </div>
         </div>
       </div>
@@ -261,31 +370,7 @@
     </div>
     <div class="copyright">Copyright ©2024 Jenish. All rights reserved</div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Web/App Developer",
-          "MERN Stack Developer",
-          "Java Developer",
-        ],
-        typeSpeed: 50,
-        loop: true,
-      });
-    </script>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
